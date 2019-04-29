@@ -3,12 +3,11 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
+
     int left, right;
     cin >> left >> right;
     bool arr[right - left + 1];
-    for(int i = 0; i <= right; i++)
+    for(int i = 0; i <= right - left; i++)
     {
         arr[i] = true;
     }
