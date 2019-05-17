@@ -26,15 +26,6 @@ void max_heapify(int *a, int i)
     }
 }
 
-void build_maxheap(int *a)
-{
-
-    for(int i = n/2; i >= 1; i--)
-    {
-        max_heapify(a,i);
-    }
-}
-
 int maximum(int *a)
 {
     return a[1];
@@ -62,7 +53,7 @@ void increase_value (int a[],int val)
     int i = n;
     if(val < a[ i ])
     {
-        cout<<"New value is less than current value, can’t be inserted" <<endl;
+        cout<<"New value is less than current value, canâ€™t be inserted" <<endl;
         return;
     }
     a[ i ] = val;
